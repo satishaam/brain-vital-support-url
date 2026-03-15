@@ -1,0 +1,263 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Brain Vitals - Support</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
+            background-color: #f5f5f7;
+            color: #1d1d1f;
+            line-height: 1.6;
+        }
+        .container {
+            max-width: 680px;
+            margin: 0 auto;
+            padding: 40px 20px;
+        }
+        .header {
+            text-align: center;
+            margin-bottom: 48px;
+        }
+        .app-icon {
+            width: 100px;
+            height: 100px;
+            background: linear-gradient(135deg, #FF4538, #FF6650);
+            border-radius: 22px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin: 0 auto 20px;
+            box-shadow: 0 8px 24px rgba(255, 69, 56, 0.3);
+        }
+        .app-icon svg {
+            width: 56px;
+            height: 56px;
+            fill: white;
+        }
+        .header h1 {
+            font-size: 34px;
+            font-weight: 700;
+            margin-bottom: 8px;
+        }
+        .header p {
+            font-size: 17px;
+            color: #6e6e73;
+        }
+        .card {
+            background: white;
+            border-radius: 16px;
+            padding: 28px;
+            margin-bottom: 20px;
+            box-shadow: 0 2px 12px rgba(0, 0, 0, 0.06);
+        }
+        .card h2 {
+            font-size: 22px;
+            font-weight: 600;
+            margin-bottom: 16px;
+            display: flex;
+            align-items: center;
+            gap: 10px;
+        }
+        .card h2 .emoji {
+            font-size: 24px;
+        }
+        .card p, .card li {
+            font-size: 15px;
+            color: #424245;
+            line-height: 1.7;
+        }
+        .card ul {
+            list-style: none;
+            padding: 0;
+        }
+        .card ul li {
+            padding: 8px 0;
+            padding-left: 24px;
+            position: relative;
+        }
+        .card ul li::before {
+            content: "•";
+            color: #FF4538;
+            font-weight: bold;
+            position: absolute;
+            left: 8px;
+        }
+        .contact-btn {
+            display: inline-block;
+            background: linear-gradient(135deg, #FF4538, #FF6650);
+            color: white;
+            text-decoration: none;
+            padding: 14px 28px;
+            border-radius: 12px;
+            font-size: 17px;
+            font-weight: 600;
+            margin-top: 12px;
+            transition: transform 0.2s, box-shadow 0.2s;
+        }
+        .contact-btn:hover {
+            transform: translateY(-1px);
+            box-shadow: 0 6px 20px rgba(255, 69, 56, 0.3);
+        }
+        .faq-item {
+            border-bottom: 1px solid #f0f0f0;
+            padding: 16px 0;
+        }
+        .faq-item:last-child {
+            border-bottom: none;
+            padding-bottom: 0;
+        }
+        .faq-item:first-child {
+            padding-top: 0;
+        }
+        .faq-item h3 {
+            font-size: 16px;
+            font-weight: 600;
+            margin-bottom: 6px;
+            color: #1d1d1f;
+        }
+        .faq-item p {
+            font-size: 14px;
+            color: #6e6e73;
+        }
+        .footer {
+            text-align: center;
+            padding: 32px 0;
+            color: #6e6e73;
+            font-size: 13px;
+        }
+        .footer a {
+            color: #FF4538;
+            text-decoration: none;
+        }
+        .badge {
+            display: inline-block;
+            background: #f0f0f0;
+            color: #6e6e73;
+            font-size: 12px;
+            font-weight: 600;
+            padding: 4px 10px;
+            border-radius: 6px;
+            margin-right: 6px;
+            margin-bottom: 6px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <div class="app-icon">
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="white">
+                    <path d="M12 2C8.5 2 5.5 4.5 5.5 8c0 2.5 1.5 4.5 3.5 5.5V15c0 .5.5 1 1 1h4c.5 0 1-.5 1-1v-1.5c2-1 3.5-3 3.5-5.5 0-3.5-3-6-6.5-6zM9.5 18h5v1c0 .5-.5 1-1 1h-3c-.5 0-1-.5-1-1v-1z"/>
+                </svg>
+            </div>
+            <h1>Brain Vitals</h1>
+            <p>Support &amp; Help Center</p>
+        </div>
+
+        <!-- Contact -->
+        <div class="card">
+            <h2><span class="emoji">📬</span> Contact Us</h2>
+            <p>Have a question, found a bug, or want to suggest a feature? We'd love to hear from you.</p>
+            <br>
+            <a href="mailto:satishavarabhi@gmail.com?subject=Brain%20Vitals%20-%20Support%20Request" class="contact-btn">Email Support</a>
+            <p style="margin-top: 12px; font-size: 13px; color: #6e6e73;">satishavarabhi@gmail.com</p>
+        </div>
+
+        <!-- FAQ -->
+        <div class="card">
+            <h2><span class="emoji">❓</span> Frequently Asked Questions</h2>
+
+            <div class="faq-item">
+                <h3>What is the Brain Vital Score?</h3>
+                <p>The Brain Vital Score is a personalized assessment based on 12 research-inspired questions across 6 key areas: Sleep, Nutrition, Physical Activity, Stress, Social Connection, and Cognitive Training. Your score ranges from 0 to 24, giving you a snapshot of your overall brain wellness.</p>
+            </div>
+
+            <div class="faq-item">
+                <h3>Does the app require an internet connection?</h3>
+                <p>No. Brain Vitals works 100% offline. All features — including the assessment, daily activities, brain games, and breathing exercises — are fully available without an internet connection.</p>
+            </div>
+
+            <div class="faq-item">
+                <h3>Is my data private?</h3>
+                <p>Absolutely. All your data is stored locally on your device. We do not collect, store, or transmit any personal information. There are no accounts, no analytics, and no tracking of any kind.</p>
+            </div>
+
+            <div class="faq-item">
+                <h3>How often should I retake the survey?</h3>
+                <p>We recommend retaking the Brain Vital Score assessment every 2 weeks to track your progress and see how lifestyle changes are impacting your brain wellness.</p>
+            </div>
+
+            <div class="faq-item">
+                <h3>How do daily activities work?</h3>
+                <p>Each day, you receive 3 fresh activities from a library of 80+ brain-boosting tasks across 5 categories: Physical, Cognitive, Social, Mindfulness, and Nutrition. Complete them to build a streak and healthy habits.</p>
+            </div>
+
+            <div class="faq-item">
+                <h3>Is the app really free?</h3>
+                <p>Yes. Brain Vitals is completely free with no ads. There is an optional tip jar if you'd like to support continued development, but it is entirely voluntary and does not unlock any additional features.</p>
+            </div>
+
+            <div class="faq-item">
+                <h3>How do I set up daily reminders?</h3>
+                <p>Go to Settings (gear icon on the home screen) and scroll to "Daily Reminders." You can set custom times for your daily activities reminder, morning routine, and wind-down breathing exercise.</p>
+            </div>
+
+            <div class="faq-item">
+                <h3>What brain games are available?</h3>
+                <p>Brain Vitals includes 15 brain training games: Quick Math Burst, Word Chain, Number Recall, Letter Hunt, Time Estimation, Category Recall, Alphabet Reverse, Word Unscramble, Memory Pairs, Bubble Wrap, Shape Count, Sudoku, Tower of Hanoi, Peg Solitaire, and Recall Challenge.</p>
+            </div>
+
+            <div class="faq-item">
+                <h3>Can I reset my data?</h3>
+                <p>Since all data is stored locally on your device, you can reset it by deleting and reinstalling the app. Please note this will erase all your scores, streaks, and activity history.</p>
+            </div>
+        </div>
+
+        <!-- Features -->
+        <div class="card">
+            <h2><span class="emoji">✨</span> Features</h2>
+            <ul>
+                <li>Science-inspired Brain Vital Score assessment</li>
+                <li>15 brain training games</li>
+                <li>80+ daily brain-boosting activities</li>
+                <li>Guided morning routine</li>
+                <li>Calming breathing exercise with audio</li>
+                <li>Customizable daily reminders</li>
+                <li>Progress tracking with streaks</li>
+                <li>Works completely offline</li>
+                <li>No ads, no tracking, no accounts</li>
+                <li>Biometric authentication (Face ID / Touch ID)</li>
+            </ul>
+        </div>
+
+        <!-- Privacy -->
+        <div class="card">
+            <h2><span class="emoji">🔒</span> Privacy</h2>
+            <p>Brain Vitals is built with your privacy as a core principle.</p>
+            <br>
+            <ul>
+                <li><strong>No data collection</strong> — We don't collect any personal data</li>
+                <li><strong>Local storage only</strong> — All data stays on your device</li>
+                <li><strong>No accounts required</strong> — No sign-up, no login</li>
+                <li><strong>No analytics or tracking</strong> — Zero third-party SDKs</li>
+                <li><strong>No ads</strong> — Your experience is never interrupted</li>
+                <li><strong>Fully offline</strong> — No network requests are made</li>
+            </ul>
+        </div>
+
+        <div class="footer">
+            <p>&copy; 2026 Brain Vitals. All rights reserved.</p>
+            <p style="margin-top: 8px;">
+                <a href="mailto:satishavarabhi@gmail.com">Contact</a>
+            </p>
+        </div>
+    </div>
+</body>
+</html>
